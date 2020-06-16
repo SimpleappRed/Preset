@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_4sdp"
+    android:layout_marginLeft="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:layout_alignParentBottom="true"
+    app:cardBackgroundColor="#33000000"
+    android:outlineAmbientShadowColor="#00000000"
+    android:outlineSpotShadowColor="#00000000"
+    android:id="@+id/parentCardNavigation"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_navigation"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutTrend"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgTrend"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_trend" />
+
+                <TextView
+                    android:id="@+id/txtTrend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTrend"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Top Trends"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCollection"
+                android:alpha="0.6"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgCollection"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_preset" />
+
+                <TextView
+                    android:id="@+id/txtCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgCollection"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Collections"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

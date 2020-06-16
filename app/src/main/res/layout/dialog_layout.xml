@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dialog Title"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorPrimaryBlack"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtDialogTitle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It seems like you have not installed Adobe Lightroom into your phone"
+            android:layout_below="@+id/txtDialogTitle"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="@color/colorSecondaryBlack"
+            android:id="@+id/txtDialogDesc"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txtDialogDesc"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/colorPrimaryWhite"
+                android:fontFamily="@font/sf_medium"
+                android:background="@drawable/bg_black_alpha"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/btnDialogNegative"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="@dimen/_6sdp"
+                android:background="@drawable/bg_primary_blue"
+                android:textColor="@color/colorPrimaryWhite"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:text="Install"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/sf_medium"
+                android:textAllCaps="false"
+                android:id="@+id/btnDialogPositive"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

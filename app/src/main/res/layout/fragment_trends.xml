@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryWhite"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/layoutTitle"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/ic_trend_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:id="@+id/imgCollection"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Trends"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorPrimaryBlack"
+            android:fontFamily="@font/sf_medium"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgCollection"
+            android:layout_marginLeft="@dimen/_8sdp"
+            />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTitle"
+        android:id="@+id/recyclerView"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressLayout"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:text="Loading"
+            android:textColor="@color/colorSecondaryBlack"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/txTStatus"
+            android:fontFamily="@font/sf_medium"
+            />
+    </RelativeLayout>
+</RelativeLayout>

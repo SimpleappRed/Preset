@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryWhite"
+    tools:context=".PresetActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:id="@+id/imgBack"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgBack"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutHeader"
+            >
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_medium"
+            android:text="Collection Name"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:id="@+id/txtSize"
+            android:text="8 Presets available"
+            android:textColor="@color/colorPrimaryBlack"
+            android:fontFamily="@font/sf_regular"
+            />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layoutTitle"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressLayout"
+        android:layout_centerInParent="true"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:text="Loading"
+            android:textColor="@color/colorSecondaryBlack"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtStatus"
+            />
+    </RelativeLayout>
+</RelativeLayout>

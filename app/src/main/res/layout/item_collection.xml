@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:fontFamily="@font/sf_medium"
+        android:textColor="@color/colorPrimaryBlack"
+        android:text="Collection Name" />
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorSecondaryBlack"
+        android:fontFamily="@font/sf_regular"
+        android:layout_below="@+id/txtName"
+        android:text="8 presets available" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:layout_below="@+id/txtSize"
+        app:cardBackgroundColor="@color/colorSecondaryWhite"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <RelativeLayout
+                android:id="@+id/progressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

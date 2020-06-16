@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parentCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/colorSecondaryWhite"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgBefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imgAfter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/imgOriginal"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/bg_black_alpha"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_original" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtDesc"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:background="@drawable/bg_black_alpha_up"
+                android:fontFamily="@font/sf_medium"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="Preset name"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgAfter"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_toLeftOf="@+id/layoutAdd"
+                android:background="@drawable/bg_black_alpha_down"
+                android:fontFamily="@font/sf_regular"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="#cool #yellow #lights #colrGrading"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgAfter"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/bg_button_add"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_4sdp">
+
+                <TextView
+                    android:id="@+id/txtOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Open"
+                    android:textColor="@color/colorPrimaryBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/imgDownload"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignBottom="@+id/txtOpen"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/txtOpen"
+                    android:src="@drawable/ic_download" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignBottom="@+id/txtOpen"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/txtOpen"
+                    android:visibility="invisible" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
