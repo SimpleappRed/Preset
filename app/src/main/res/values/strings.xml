@@ -3,17 +3,17 @@
 
 
     <!--    Test AD Unit IDs-->
-    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>
-    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="rewarded_ad">ca-app-pub-3940256099942544/5224354917</string>
-    <string name="native_ad">ca-app-pub-3940256099942544/2247696110</string>
+<!--    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>-->
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="rewarded_ad">ca-app-pub-3940256099942544/5224354917</string>-->
+<!--    <string name="native_ad">ca-app-pub-3940256099942544/2247696110</string>-->
 
     <!--    AD Unit IDs-->
-<!--    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>-->
-<!--    <string name="app_id">ca-app-pub-6803080748225134~2360697270</string>-->
-<!--    <string name="interstitial_ad">ca-app-pub-6803080748225134/5434100090</string>-->
-<!--    <string name="rewarded_ad">ca-app-pub-6803080748225134/2537270171</string>-->
+    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>
+    <string name="app_id">ca-app-pub-6803080748225134~2360697270</string>
+    <string name="interstitial_ad">ca-app-pub-6803080748225134/5434100090</string>
+    <string name="rewarded_ad">ca-app-pub-6803080748225134/2537270171</string>
 
 </resources>
